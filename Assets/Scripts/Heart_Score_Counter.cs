@@ -12,7 +12,7 @@ public class Heart_Score_Counter : MonoBehaviour
     [SerializeField] int playerLives;
     [SerializeField] int coinScore = 0;
 
-        void Awake()
+    void Awake()
     {
         int numGameSessions = FindObjectsOfType<Heart_Score_Counter>().Length;
         if (numGameSessions > 1)
@@ -62,6 +62,7 @@ public class Heart_Score_Counter : MonoBehaviour
     }
     void StartFromMainMenu()
     {
+        FindObjectOfType<ScenePersist>().ResetScenePersist();
         SceneManager.LoadScene(0);
         Destroy(gameObject);
     }
