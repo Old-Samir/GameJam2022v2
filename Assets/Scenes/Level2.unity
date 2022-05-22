@@ -426,7 +426,7 @@ Transform:
   - {fileID: 202332563}
   - {fileID: 1850770891}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &188996642
 GameObject:
@@ -6248,17 +6248,21 @@ PrefabInstance:
       propertyPath: counterDisplay
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 4968493359507808974, guid: dbda7366cb26782499a6b5f237b36477, type: 3}
+      propertyPath: maxCoinsInScene
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4968493359507808977, guid: dbda7366cb26782499a6b5f237b36477, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4968493359507808977, guid: dbda7366cb26782499a6b5f237b36477, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 13.01
+      value: -8.2
       objectReference: {fileID: 0}
     - target: {fileID: 4968493359507808977, guid: dbda7366cb26782499a6b5f237b36477, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 7.62
+      value: -3.06
       objectReference: {fileID: 0}
     - target: {fileID: 4968493359507808977, guid: dbda7366cb26782499a6b5f237b36477, type: 3}
       propertyPath: m_LocalPosition.z

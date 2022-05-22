@@ -8,9 +8,8 @@ public class Heart_Score_Counter : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI livesText;
     [SerializeField] TextMeshProUGUI CoinText;
-
-    [SerializeField] int playerLives;
-    [SerializeField] int coinScore = 0;
+        [SerializeField] int playerLives;
+    public int coinScore = 0;
 
     void Awake()
     {
@@ -71,6 +70,11 @@ public class Heart_Score_Counter : MonoBehaviour
     // {
     //     CoinText.text = FindObjectOfType<Goal>().ReturnWallet() + " . " + FindObjectOfType<Goal>().ReturnCoinTarget();
     // }
+
+    public void LevelBeaten()
+    {
+        Destroy(CoinText);
+    }
 
 }
 
