@@ -7,9 +7,10 @@ using TMPro;
 public class Goal : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI counterDisplay;
-    [SerializeField] int target;
+    [SerializeField] int maxCoinsInScene;
     [SerializeField] Color defaultColor = Color.red;
-    [SerializeField] Color unlockColor = Color.blue;   
+    [SerializeField] Color unlockColor = Color.blue;
+    [SerializeField] float levelLoadDelay = 1f;
     SpriteRenderer spriteRenderer;
     Wallet playerWallet;
 
@@ -25,7 +26,7 @@ public class Goal : MonoBehaviour
     void Update()
     {
         //Check if player has enough coins to unlock the goal
-        if(playerWallet.GetCoins() >= target)
+        if(playerWallet.GetCoins() >= maxCoinsInScene)
         {
             isUnlocked = true;
             spriteRenderer.color = unlockColor;
@@ -42,7 +43,10 @@ public class Goal : MonoBehaviour
                 // LevelManager.Instance.ReloadLevel();
 
                 //Load New Level
-                LevelManager.Instance.LoadNewLevel();
+                StartCoroutine(LoadNextLevel());
+                //FindObjectOfType<Heart_Score_Counter>().LevelBeaten();
+                //Destroy(GetComponent<Heart_Score_Counter>().CoinText);
+                //LevelManager.Instance.LoadNewLevel();
             }
         }
     }
@@ -54,6 +58,21 @@ public class Goal : MonoBehaviour
 
     public string ReturnCoinTarget()
     {
-        return (target.ToString());
+        return (maxCoinsInScene.ToString());
     }
+    IEnumerator LoadNextLevel()
+    {
+        yield return new WaitForSecondsRealtime(levelLoadDelay);
+        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        int nextSceneIndex = currentSceneIndex + 1;
+
+        if (nextSceneIndex == SceneManager.sceneCountInBuildSettings)
+        {
+            nextSceneIndex = 0;
+        }
+
+        FindObjectOfType<ScenePersist>().ResetScenePersist();
+        SceneManager.LoadScene(nextSceneIndex);
+    }
+
 }
