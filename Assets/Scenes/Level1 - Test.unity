@@ -288,7 +288,7 @@ MonoBehaviour:
   livesText: {fileID: 360558295}
   CoinText: {fileID: 1883959238}
   playerLives: 3
-  Coins: 0
+  coinScore: 0
 --- !u!4 &64597916
 Transform:
   m_ObjectHideFlags: 0
@@ -6167,6 +6167,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4253297328530706518, guid: 386af45775f34f94ea083fad2d0054a6, type: 3}
       propertyPath: m_Name
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 4253297328530706518, guid: 386af45775f34f94ea083fad2d0054a6, type: 3}
+      propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents:

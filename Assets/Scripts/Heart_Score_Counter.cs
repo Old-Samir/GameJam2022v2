@@ -10,9 +10,9 @@ public class Heart_Score_Counter : MonoBehaviour
     [SerializeField] TextMeshProUGUI CoinText;
 
     [SerializeField] int playerLives;
+    [SerializeField] int coinScore = 0;
 
-    [SerializeField] int Coins;
-    void Awake()
+        void Awake()
     {
         int numGameSessions = FindObjectsOfType<Heart_Score_Counter>().Length;
         if (numGameSessions > 1)
@@ -27,13 +27,19 @@ public class Heart_Score_Counter : MonoBehaviour
 
     private void Start() 
     {
-      livesText.text = playerLives.ToString();  
+      livesText.text = playerLives.ToString();
+      CoinText.text = coinScore.ToString();
     }
 
-    private void Update() {
-        CoinCounter();
-    }
+    // private void Update() {
+    //     CoinCounter();
+    // }
 
+    public void AddToScore(int pointsToAdd)
+    {
+        coinScore += pointsToAdd;
+        CoinText.text = coinScore.ToString();
+    }
     public void ProcessPlayerDeath()
     {
         if (playerLives > 1)
@@ -60,10 +66,10 @@ public class Heart_Score_Counter : MonoBehaviour
         Destroy(gameObject);
     }
 
-    void CoinCounter()
-    {
-        CoinText.text = FindObjectOfType<Goal>().ReturnWallet() + " . " + FindObjectOfType<Goal>().ReturnCoinTarget();
-    }
+    // void CoinCounter()
+    // {
+    //     CoinText.text = FindObjectOfType<Goal>().ReturnWallet() + " . " + FindObjectOfType<Goal>().ReturnCoinTarget();
+    // }
 
 }
 
