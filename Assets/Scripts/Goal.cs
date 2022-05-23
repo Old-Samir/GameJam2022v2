@@ -38,12 +38,15 @@ public class Goal : MonoBehaviour
         //Complete the level if the player has enough coins
         if (other.GetComponent<Wallet>() == playerWallet)
         {
-            if(isUnlocked) {
+            if(isUnlocked)
+            {
                 // Reload Level
                 // LevelManager.Instance.ReloadLevel();
 
                 //Load New Level
                 StartCoroutine(LoadNextLevel());
+                //Reset coin counter (does not work)
+                FindObjectOfType<Heart_Score_Counter>().ResetCoinCounter();
                 //FindObjectOfType<Heart_Score_Counter>().LevelBeaten();
                 //Destroy(GetComponent<Heart_Score_Counter>().CoinText);
                 //LevelManager.Instance.LoadNewLevel();
@@ -60,6 +63,7 @@ public class Goal : MonoBehaviour
     {
         return (maxCoinsInScene.ToString());
     }
+
     IEnumerator LoadNextLevel()
     {
         yield return new WaitForSecondsRealtime(levelLoadDelay);
