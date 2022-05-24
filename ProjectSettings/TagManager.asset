@@ -15,9 +15,9 @@ TagManager:
   - Water
   - UI
   - Interactables
-  - 
-  - 
-  - 
+  - Enemy
+  - Player
+  - Ground
   - 
   - 
   - 
@@ -49,4 +49,7 @@ TagManager:
     locked: 0
   - name: Player
     uniqueID: 1008427097
+    locked: 0
+  - name: Water
+    uniqueID: 2777653779
     locked: 0

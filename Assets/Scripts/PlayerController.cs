@@ -57,7 +57,7 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other) {
 
-        if (other.gameObject.tag == "Spikey")
+        if (other.gameObject.tag == "Spikey" || other.gameObject.tag == "Enemy")
          {
             FindObjectOfType<Heart_Score_Counter>().ProcessPlayerDeath();
              Debug.Log ("oww");
