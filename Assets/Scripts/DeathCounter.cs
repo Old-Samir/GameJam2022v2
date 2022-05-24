@@ -58,29 +58,29 @@ public class DeathCounter : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other) 
     {
-         if (other.gameObject.tag == "Spikey")
-         {
-             takeDamage(1);
-             Debug.Log ("oww");
+        //  if (other.gameObject.tag == "Spikey")
+        //  {
+        //      takeDamage(1);
+        //      Debug.Log ("oww");
 
-         } 
+        //  } 
     } 
 
     public void takeDamage(int damage)
     {
-        if (playerLife> 0)
-        {
-        playerLife -= damage;
-         Destroy(hearts[playerLife].gameObject);
-        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-        livesText.text = playerLife.ToString();
-        SceneManager.LoadScene(currentSceneIndex);
-       // Destroy(gameObject);
-        if (playerLife <1 )
-          {
-             dead = true;
-         }
-        }
+    //     if (playerLife> 0)
+    //     {
+    //     playerLife -= damage;
+    //      Destroy(hearts[playerLife].gameObject);
+    //     int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+    //     livesText.text = playerLife.ToString();
+    //     SceneManager.LoadScene(currentSceneIndex);
+    //    // Destroy(gameObject);
+    //     if (playerLife <1 )
+    //       {
+    //          dead = true;
+    //      }
+    //     }
 
     }
 }

@@ -289,6 +289,7 @@ MonoBehaviour:
   CoinText: {fileID: 1883959238}
   playerLives: 3
   coinScore: 0
+  resetCoinScore: 0
 --- !u!4 &64597916
 Transform:
   m_ObjectHideFlags: 0
@@ -6250,7 +6251,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4968493359507808974, guid: dbda7366cb26782499a6b5f237b36477, type: 3}
       propertyPath: maxCoinsInScene
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4968493359507808977, guid: dbda7366cb26782499a6b5f237b36477, type: 3}
       propertyPath: m_RootOrder

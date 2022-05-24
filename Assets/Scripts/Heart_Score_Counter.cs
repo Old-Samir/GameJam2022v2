@@ -38,8 +38,17 @@ public class Heart_Score_Counter : MonoBehaviour
 
     public void AddToScore(int pointsToAdd)
     {
+        //Adds 
         coinScore += pointsToAdd;
         CoinText.text = coinScore.ToString();
+        Debug.Log("The player has " + coinScore + " coins.");
+    }
+
+    public int GetCoinCount()
+    {
+        //This function returns the total # of coins the user has collected in a level.
+        //Used to determine if things like a goal can be activated.
+        return coinScore;
     }
     public void ProcessPlayerDeath()
     {

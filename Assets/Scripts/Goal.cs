@@ -12,7 +12,8 @@ public class Goal : MonoBehaviour
     [SerializeField] Color unlockColor = Color.blue;
     [SerializeField] float levelLoadDelay = 1f;
     SpriteRenderer spriteRenderer;
-    Wallet playerWallet;
+
+    int coinsPlayerHas;
 
     bool isUnlocked;
 
@@ -20,13 +21,19 @@ public class Goal : MonoBehaviour
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
         spriteRenderer.color = defaultColor;
-        playerWallet = FindObjectOfType<Wallet>();
+
+        //GetCoinCount needs to be run twice, once for every scene reload (in this method), and
+        //the other in the Update in order for the currently picked up coints to count
+        coinsPlayerHas = FindObjectOfType<Heart_Score_Counter>().GetCoinCount();
     }
 
     void Update()
     {
         //Check if player has enough coins to unlock the goal
-        if(playerWallet.GetCoins() >= maxCoinsInScene)
+        
+        coinsPlayerHas = FindObjectOfType<Heart_Score_Counter>().GetCoinCount();
+        
+        if(coinsPlayerHas == maxCoinsInScene)
         {
             isUnlocked = true;
             spriteRenderer.color = unlockColor;
@@ -35,33 +42,13 @@ public class Goal : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        //Complete the level if the player has enough coins
-        if (other.GetComponent<Wallet>() == playerWallet)
-        {
-            if(isUnlocked)
-            {
-                // Reload Level
-                // LevelManager.Instance.ReloadLevel();
-
-                //Load New Level
-                StartCoroutine(LoadNextLevel());
-                //Reset coin counter (does not work)
-                FindObjectOfType<Heart_Score_Counter>().ResetCoinCounter();
-                //FindObjectOfType<Heart_Score_Counter>().LevelBeaten();
-                //Destroy(GetComponent<Heart_Score_Counter>().CoinText);
-                //LevelManager.Instance.LoadNewLevel();
-            }
+        if(isUnlocked)
+        {         
+            //Load next level
+            StartCoroutine(LoadNextLevel());
+            //Reset coin counter for next level
+            //FindObjectOfType<Heart_Score_Counter>().ResetCoinCounter();
         }
-    }
-
-    public string ReturnWallet()
-    {
-        return(playerWallet.GetCoins().ToString());
-    }
-
-    public string ReturnCoinTarget()
-    {
-        return (maxCoinsInScene.ToString());
     }
 
     IEnumerator LoadNextLevel()
@@ -69,6 +56,7 @@ public class Goal : MonoBehaviour
         yield return new WaitForSecondsRealtime(levelLoadDelay);
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         int nextSceneIndex = currentSceneIndex + 1;
+        FindObjectOfType<Heart_Score_Counter>().ResetCoinCounter();
 
         if (nextSceneIndex == SceneManager.sceneCountInBuildSettings)
         {
