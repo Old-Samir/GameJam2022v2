@@ -33,7 +33,7 @@ public class Goal : MonoBehaviour
         
         coinsPlayerHas = FindObjectOfType<Heart_Score_Counter>().GetCoinCount();
         
-        if(coinsPlayerHas == maxCoinsInScene)
+        if(coinsPlayerHas >= maxCoinsInScene)
         {
             isUnlocked = true;
             spriteRenderer.color = unlockColor;
