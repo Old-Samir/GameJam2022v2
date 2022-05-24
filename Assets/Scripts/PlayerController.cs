@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] Collider2D feet;
 
     public bool isActive = true;
+    bool wasKilled = false;
 
     Vector2 moveDirection;
     Vector2 rawInput;
@@ -55,14 +56,14 @@ public class PlayerController : MonoBehaviour
         
     }
 
-    private void OnTriggerEnter2D(Collider2D other) {
-
-        if (other.gameObject.tag == "Spikey")
+    private void OnTriggerEnter2D(Collider2D other)
+     {
+        if (other.gameObject.tag == "Spikey" && !wasKilled)
          {
+             //wasKilled = true was added as a bug fix to prevent the death counter from removing two lives on death
+            wasKilled = true;
             FindObjectOfType<Heart_Score_Counter>().ProcessPlayerDeath();
-             Debug.Log ("oww");
-
+            Debug.Log ("oww");
          } 
-
     }
 }
