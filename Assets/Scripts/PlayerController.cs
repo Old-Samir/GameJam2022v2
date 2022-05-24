@@ -58,7 +58,7 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
      {
-        if (other.gameObject.tag == "Spikey" && !wasKilled)
+        if ((other.gameObject.tag == "Spikey" || other.gameObject.tag == "Enemy") && !wasKilled)
          {
              //wasKilled = true was added as a bug fix to prevent the death counter from removing two lives on death
             wasKilled = true;
