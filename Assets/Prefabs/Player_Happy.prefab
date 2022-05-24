@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 4253297328530706512}
   - component: {fileID: 4253297328530706517}
   - component: {fileID: 1974945641}
-  - component: {fileID: 1974945647}
   m_Layer: 0
   m_Name: Player_Happy
   m_TagString: Untagged
@@ -134,24 +133,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5c7b62f81adf2643a65e50f19434e8b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1974945647
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4253297328530706518}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fdf42ea83be44bb4aba3ad48cc899b5e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hearts:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  playerLife: 3
-  livesText: {fileID: 0}
 --- !u!1 &4253297329264242479
 GameObject:
   m_ObjectHideFlags: 0
