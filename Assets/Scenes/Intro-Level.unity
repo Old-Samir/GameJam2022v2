@@ -4316,7 +4316,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.6533777, y: 1}
+    m_SensorSize: {x: 1.5517662, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -6211,14 +6211,6 @@ PrefabInstance:
       propertyPath: defaultColor.r
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4968493359507808975, guid: dbda7366cb26782499a6b5f237b36477, type: 3}
-      propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 0.81
-      objectReference: {fileID: 0}
-    - target: {fileID: 4968493359507808975, guid: dbda7366cb26782499a6b5f237b36477, type: 3}
-      propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 0.99
-      objectReference: {fileID: 0}
     - target: {fileID: 4968493359507808976, guid: dbda7366cb26782499a6b5f237b36477, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -6229,11 +6221,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4968493359507808977, guid: dbda7366cb26782499a6b5f237b36477, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.52
+      value: 46.19
       objectReference: {fileID: 0}
     - target: {fileID: 4968493359507808977, guid: dbda7366cb26782499a6b5f237b36477, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.42
+      value: -5.52
       objectReference: {fileID: 0}
     - target: {fileID: 4968493359507808977, guid: dbda7366cb26782499a6b5f237b36477, type: 3}
       propertyPath: m_LocalPosition.z
