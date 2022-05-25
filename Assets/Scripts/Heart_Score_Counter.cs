@@ -11,8 +11,6 @@ public class Heart_Score_Counter : MonoBehaviour
     [SerializeField] int playerLives;
     public int coinScore = 0;
     public int resetCoinScore = 0;
-    int sceneMainMenu = 0;
-    int sceneCredits = 4;
 
     void Awake()
     {
@@ -32,10 +30,6 @@ public class Heart_Score_Counter : MonoBehaviour
       livesText.text = playerLives.ToString();
       CoinText.text = coinScore.ToString();
     }
-
-    // private void Update() {
-    //     CoinCounter();
-    // }
 
     public void AddToScore(int pointsToAdd)
     {
@@ -74,13 +68,12 @@ public class Heart_Score_Counter : MonoBehaviour
     void StartFromMainMenu()
     {
         FindObjectOfType<ScenePersist>().ResetScenePersist();
-        SceneManager.LoadScene(sceneMainMenu);
+        FindObjectOfType<LevelManager>().LoadMainMenu();
         Destroy(gameObject);
     }
     void GoToCredits()
     {
         FindObjectOfType<ScenePersist>().ResetScenePersist();
-        //SceneManager.LoadScene(sceneCredits);
         FindObjectOfType<LevelManager>().LoadCredits();
         Destroy(gameObject);
     }

@@ -3950,8 +3950,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd9a2c55181339c4c8e29dcc2c967976, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultColor: {r: 1, g: 0, b: 0, a: 1}
-  unlockColor: {r: 0, g: 0, b: 1, a: 1}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  unlockColor: {r: 1, g: 1, b: 1, a: 1}
   levelLoadDelay: 1
 --- !u!1 &429474775
 GameObject:
@@ -4287,7 +4287,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.6795031, y: 1}
+    m_SensorSize: {x: 1.6533777, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
