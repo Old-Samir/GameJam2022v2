@@ -749,7 +749,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 134.5, y: -24.281}
+  m_AnchoredPosition: {x: -72.5, y: -24.281}
   m_SizeDelta: {x: 269, y: 619.5629}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1228023541
@@ -772,50 +772,48 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Idealtheif
-
-    Old Samir
+  m_text: 'Idealtheif and Old Samir
 
 
-    Old Samir
 
-    Idealtheif
+    Old Samir and Idealtheif
+
 
 
     Idealtheif
-
-    Old
-    Samir
+    and Old Samir
 
 
-    Old Samir
 
-    Idealtheif
+    Old Samir and Idealtheif
 
 
-    Idealtheif
 
-    Old Samir
+    Idealtheif and Old Samir
+
 
 
     Old
-    Samir
-
-    Idealtheif
+    Samir and Idealtheif
 
 
-    Idealtheif
 
-    Old Samir
+    Idealtheif and Old Samir
+
 
 
     Male Death Sound
-    - HighPixel
+    - HighPixel @ freesound.org
 
-    Intro Level Sound - cabled_mess
+    Happy Tune Sound - cabled_mess @ freesound.org
 
-    Credits Sound - RutgerMuller
+    8-bit
+    Electrohouse Sound - RutgerMuller @ freesound.org
 
+    Volcano map pack - Tio
+    Aimar @ opengameart.org
+
+    Platformer Art Complete Pack - Kenney.nl @ opengameart.org
 
 
 '
@@ -881,7 +879,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -145.41614, w: 3.2601013}
+  m_margin: {x: 0, y: 0, z: -431.60327, w: 3.2601013}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1006,7 +1004,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -148, y: -24.281}
+  m_AnchoredPosition: {x: -355, y: -24.281}
   m_SizeDelta: {x: 269, y: 619.5629}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1305440720
@@ -1058,7 +1056,7 @@ MonoBehaviour:
 
 
 
-    Asset & Audio Attributions
+    Asset Attributions
 
 '
   m_isRightToLeft: 0
@@ -1123,7 +1121,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 3.2601013}
+  m_margin: {x: -114.243286, y: 0, z: 0, w: 3.2601013}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
