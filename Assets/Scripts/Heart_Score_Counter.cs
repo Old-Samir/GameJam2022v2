@@ -57,7 +57,7 @@ public class Heart_Score_Counter : MonoBehaviour
         }
         else
         {
-            StartFromMainMenu();
+            GoToCredits();
         }
 
     }
@@ -75,12 +75,12 @@ public class Heart_Score_Counter : MonoBehaviour
         SceneManager.LoadScene(0);
         Destroy(gameObject);
     }
-
-    // void CoinCounter()
-    // {
-    //     CoinText.text = FindObjectOfType<Goal>().ReturnWallet() + " . " + FindObjectOfType<Goal>().ReturnCoinTarget();
-    // }
-
+    void GoToCredits()
+    {
+        FindObjectOfType<ScenePersist>().ResetScenePersist();
+        SceneManager.LoadScene(4);
+        Destroy(gameObject);
+    }
     public void LevelBeaten()
     {
         Destroy(CoinText);
