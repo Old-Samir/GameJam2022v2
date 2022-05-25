@@ -809,6 +809,15 @@ MonoBehaviour:
     Old Samir
 
 
+    Male Death Sound
+    - HighPixel
+
+    Intro Level Sound - cabled_mess
+
+    Credits Sound - RutgerMuller
+
+
+
 '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -872,7 +881,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 3.2601013}
+  m_margin: {x: 0, y: 0, z: -145.41614, w: 3.2601013}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1049,6 +1058,7 @@ MonoBehaviour:
 
 
 
+    Asset & Audio Attributions
 
 '
   m_isRightToLeft: 0
