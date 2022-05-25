@@ -13,6 +13,9 @@ public class Goal : MonoBehaviour
     [SerializeField] float levelLoadDelay = 1f;
     SpriteRenderer spriteRenderer;
 
+    //Add None UI build index Levels in the array
+    public int[] noneUILevels = new int[] {1};
+
     int coinsPlayerHas;
 
     bool isUnlocked;
@@ -44,10 +47,7 @@ public class Goal : MonoBehaviour
     {
         if(isUnlocked)
         {         
-            //Load next level
             StartCoroutine(LoadNextLevel());
-            //Reset coin counter for next level
-            //FindObjectOfType<Heart_Score_Counter>().ResetCoinCounter();
         }
     }
 
@@ -56,7 +56,12 @@ public class Goal : MonoBehaviour
         yield return new WaitForSecondsRealtime(levelLoadDelay);
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         int nextSceneIndex = currentSceneIndex + 1;
-        FindObjectOfType<Heart_Score_Counter>().ResetCoinCounter();
+
+        // "1" need to equal the intro levels, or any other levels that do not utilize a UI
+        for (int i = 0; SceneManager.GetActiveScene().buildIndex != noneUILevels[i]; i++)
+        {
+            FindObjectOfType<Heart_Score_Counter>().ResetCoinCounter();
+        }
 
         if (nextSceneIndex == SceneManager.sceneCountInBuildSettings)
         {

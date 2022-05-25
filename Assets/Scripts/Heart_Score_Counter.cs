@@ -28,8 +28,11 @@ public class Heart_Score_Counter : MonoBehaviour
 
     private void Start() 
     {
-      livesText.text = playerLives.ToString();
-      CoinText.text = coinScore.ToString();
+        for (int i = 0; SceneManager.GetActiveScene().buildIndex != FindObjectOfType<Goal>().noneUILevels[i]; i++)
+        {
+            livesText.text = playerLives.ToString();
+            CoinText.text = coinScore.ToString();
+        }
     }
 
     // private void Update() {
