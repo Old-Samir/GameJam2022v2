@@ -46,8 +46,6 @@ public class Goal : MonoBehaviour
         {         
             //Load next level
             StartCoroutine(LoadNextLevel());
-            //Reset coin counter for next level
-            //FindObjectOfType<Heart_Score_Counter>().ResetCoinCounter();
         }
     }
 
