@@ -6004,6 +6004,67 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dbda7366cb26782499a6b5f237b36477, type: 3}
+--- !u!1001 &5566970358559567761
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2293888251882707226, guid: a2b65208e87e64d4c85c454ba3b518ee, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2293888251882707226, guid: a2b65208e87e64d4c85c454ba3b518ee, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -15.702755
+      objectReference: {fileID: 0}
+    - target: {fileID: 2293888251882707226, guid: a2b65208e87e64d4c85c454ba3b518ee, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.1474247
+      objectReference: {fileID: 0}
+    - target: {fileID: 2293888251882707226, guid: a2b65208e87e64d4c85c454ba3b518ee, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 9.407723
+      objectReference: {fileID: 0}
+    - target: {fileID: 2293888251882707226, guid: a2b65208e87e64d4c85c454ba3b518ee, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2293888251882707226, guid: a2b65208e87e64d4c85c454ba3b518ee, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2293888251882707226, guid: a2b65208e87e64d4c85c454ba3b518ee, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2293888251882707226, guid: a2b65208e87e64d4c85c454ba3b518ee, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2293888251882707226, guid: a2b65208e87e64d4c85c454ba3b518ee, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2293888251882707226, guid: a2b65208e87e64d4c85c454ba3b518ee, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2293888251882707226, guid: a2b65208e87e64d4c85c454ba3b518ee, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4551490594837921275, guid: a2b65208e87e64d4c85c454ba3b518ee, type: 3}
+      propertyPath: m_Volume
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 7174069905064240350, guid: a2b65208e87e64d4c85c454ba3b518ee, type: 3}
+      propertyPath: m_Name
+      value: Underworld Music
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a2b65208e87e64d4c85c454ba3b518ee, type: 3}
 --- !u!1001 &8124854763652935985
 PrefabInstance:
   m_ObjectHideFlags: 0
