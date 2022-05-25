@@ -80,7 +80,8 @@ public class Heart_Score_Counter : MonoBehaviour
     void GoToCredits()
     {
         FindObjectOfType<ScenePersist>().ResetScenePersist();
-        SceneManager.LoadScene(sceneCredits);
+        //SceneManager.LoadScene(sceneCredits);
+        FindObjectOfType<LevelManager>().LoadCredits();
         Destroy(gameObject);
     }
     public void LevelBeaten()
