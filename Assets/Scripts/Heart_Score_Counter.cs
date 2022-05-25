@@ -10,7 +10,6 @@ public class Heart_Score_Counter : MonoBehaviour
     [SerializeField] TextMeshProUGUI CoinText;
     [SerializeField] int playerLives;
     public int coinScore = 0;
-    [SerializeField] AudioClip maleDeathSFX;
     public int resetCoinScore = 0;
 
     void Awake()
@@ -51,9 +50,7 @@ public class Heart_Score_Counter : MonoBehaviour
         return coinScore;
     }
     public void ProcessPlayerDeath()
-    {
-        GetComponent<AudioSource>().PlayOneShot(maleDeathSFX);
-        
+    {    
         if (playerLives > 1)
         {
             TakeDamage();
