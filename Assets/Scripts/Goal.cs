@@ -58,7 +58,7 @@ public class Goal : MonoBehaviour
 
         if (nextSceneIndex == SceneManager.sceneCountInBuildSettings)
         {
-            nextSceneIndex = 0;
+            nextSceneIndex = 1;
             DestroyAllGameObjects();
         }
 
