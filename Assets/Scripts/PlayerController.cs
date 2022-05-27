@@ -67,6 +67,7 @@ public class PlayerController : MonoBehaviour
             wasKilled = true;
             canMove = false;
             GetComponent<AudioSource>().PlayOneShot(maleDeathSFX);
+            FindObjectOfType<PlayerHit>().CallFlasher();
             Invoke("DeathBegins", failReload);
             Debug.Log ("oww");
          } 
