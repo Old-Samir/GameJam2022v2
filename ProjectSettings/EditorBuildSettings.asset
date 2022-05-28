@@ -21,7 +21,19 @@ EditorBuildSettings:
     path: Assets/Scenes/Ideal_4.unity
     guid: de459c6988464174e9b0ae15f67dc055
   - enabled: 1
-    path: Assets/Scenes/Level3.unity
-    guid: 7bf6707a433248e43912d12386ea4444
+    path: Assets/Scenes/Ideal_5.unity
+    guid: 94fa893b9483ec84d9850b4e78ba7ad7
+  - enabled: 1
+    path: Assets/Scenes/Ideal_6.unity
+    guid: 3774e939c71b53f42b23205b7cce2aa9
+  - enabled: 1
+    path: Assets/Scenes/Level2Recreated 1.unity
+    guid: b8f7a582fca9c5a4e907ebe775742abe
+  - enabled: 1
+    path: Assets/Scenes/SL1.unity
+    guid: 5cf4986f3d69f484d974b68be4a85f1c
+  - enabled: 1
+    path: Assets/Scenes/SL2.unity
+    guid: 3be743620c1d1064cbdf7b341d610bc4
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: dccdb1a320371514fb7f11395c19f26a, type: 2}

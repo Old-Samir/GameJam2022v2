@@ -5491,6 +5491,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameSession
       objectReference: {fileID: 0}
+    - target: {fileID: 8384804450445528121, guid: 245e0ddccba6c3d4caa4c15a718d4049, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8384804450445528121, guid: 245e0ddccba6c3d4caa4c15a718d4049, type: 3}
+      propertyPath: m_fontColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8384804450445528121, guid: 245e0ddccba6c3d4caa4c15a718d4049, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8384804450445528121, guid: 245e0ddccba6c3d4caa4c15a718d4049, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4278255360
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 245e0ddccba6c3d4caa4c15a718d4049, type: 3}
