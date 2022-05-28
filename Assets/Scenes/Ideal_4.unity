@@ -331,8 +331,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerImage: {fileID: 286367182}
-  playerStartColor: {r: 0.057008527, g: 0.6132076, b: 0, a: 1}
-  playerEndColor: {r: 1, g: 0.23113209, b: 0.23113209, a: 1}
+  playerStartColor: {r: 0.04676224, g: 0.8962264, b: 0.04650232, a: 1}
+  playerEndColor: {r: 1, g: 0.07898478, b: 0, a: 1}
+  coinImage: {fileID: 1120769246}
+  coinStartColor: {r: 1, g: 1, b: 1, a: 1}
+  coinEndColor: {r: 1, g: 1, b: 0, a: 1}
 --- !u!4 &90644359 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3620489699338494569, guid: b9d3bf93488e41a4dbe93ac02b9d9f0d, type: 3}
@@ -6083,6 +6086,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b9d3bf93488e41a4dbe93ac02b9d9f0d, type: 3}
+--- !u!114 &1120769246 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8711717754051002311, guid: 245e0ddccba6c3d4caa4c15a718d4049, type: 3}
+  m_PrefabInstance: {fileID: 864780766}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1182902250 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3620489699338494569, guid: b9d3bf93488e41a4dbe93ac02b9d9f0d, type: 3}

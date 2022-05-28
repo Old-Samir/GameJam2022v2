@@ -85,4 +85,9 @@ public class Goal : MonoBehaviour
         return (results);
      }
 
+     public int MaxCoinsReturn ()
+     {
+         return (maxCoinsInScene);
+     }
+
 }
