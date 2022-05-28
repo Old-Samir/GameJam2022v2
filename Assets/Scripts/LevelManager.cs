@@ -73,4 +73,9 @@ public class LevelManager : MonoBehaviour
     {
         SceneManager.LoadScene("Intro-Level");
     }
+
+    public void GameOver()
+    {
+        SceneManager.LoadScene("GameOver");
+    }
 }

@@ -11,7 +11,7 @@ public class Heart_Score_Counter : MonoBehaviour
     [SerializeField] int playerLives;
     public int coinScore = 0;
     public int resetCoinScore = 0;
-
+    float deathTimer = 3.00f;
     void Awake()
     {
         int numGameSessions = FindObjectsOfType<Heart_Score_Counter>().Length;
@@ -53,7 +53,9 @@ public class Heart_Score_Counter : MonoBehaviour
         }
         else
         {
-            GoToCredits();
+            TakeDamage();
+            DeathSequence();
+            //Invoke("GoToCredits", 2f);
         }
 
     }
@@ -76,6 +78,16 @@ public class Heart_Score_Counter : MonoBehaviour
         FindObjectOfType<ScenePersist>().ResetScenePersist();
         FindObjectOfType<LevelManager>().LoadCredits();
         Destroy(gameObject);
+    }
+    void DeathSequence()
+    {
+        FindObjectOfType<ScenePersist>().ResetScenePersist();
+        // Destroy(gameObject);
+        FindObjectOfType<LevelManager>().GameOver();
+        Invoke("GoToCredits", deathTimer);
+        // FindObjectOfType<ScenePersist>().ResetScenePersist();
+        // FindObjectOfType<LevelManager>().LoadCredits();
+        // Destroy(gameObject);
     }
     public void LevelBeaten()
     {
