@@ -37,6 +37,7 @@ public class Goal : MonoBehaviour
         {
             isUnlocked = true;
             spriteRenderer.color = unlockColor;
+            FindObjectOfType<DoorTransition>().DoorClosedToOpen();
         }
     }
 
