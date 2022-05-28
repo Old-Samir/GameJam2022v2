@@ -5439,6 +5439,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2048252460241867642, guid: 245e0ddccba6c3d4caa4c15a718d4049, type: 3}
+      propertyPath: coinStartColor.a
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8384804450200423794, guid: 245e0ddccba6c3d4caa4c15a718d4049, type: 3}
       propertyPath: m_RootOrder
       value: 5

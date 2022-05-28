@@ -82,6 +82,7 @@ public class Goal : MonoBehaviour
         float floatCoinScore = (float)FindObjectOfType<Heart_Score_Counter>().coinScore;
         float maxCoins = (float) maxCoinsInScene;
         float results = floatCoinScore / maxCoins;
+        Debug.Log (results);
         return (results);
      }
 

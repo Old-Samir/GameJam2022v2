@@ -162,6 +162,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8384804450200423794}
   - component: {fileID: 8384804450200423797}
+  - component: {fileID: 2048252460241867642}
   m_Layer: 0
   m_Name: GameSession
   m_TagString: Untagged
@@ -202,6 +203,24 @@ MonoBehaviour:
   playerLives: 3
   coinScore: 0
   resetCoinScore: 0
+--- !u!114 &2048252460241867642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8384804450200423796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44eaf1d888bda6d44ae4d7a8a0ff92df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerImage: {fileID: 4245044162586841891}
+  playerStartColor: {r: 0, g: 1, b: 0, a: 1}
+  playerEndColor: {r: 1, g: 0, b: 0, a: 1}
+  coinImage: {fileID: 8711717754051002311}
+  coinStartColor: {r: 1, g: 1, b: 1, a: 1}
+  coinEndColor: {r: 1, g: 0.9424448, b: 0, a: 1}
 --- !u!1 &8384804450288581791
 GameObject:
   m_ObjectHideFlags: 0
