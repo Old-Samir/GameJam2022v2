@@ -12,8 +12,11 @@ public class Heart_Score_Counter : MonoBehaviour
     public int coinScore = 0;
     public int resetCoinScore = 0;
     float deathTimer = 3.00f;
+
+    private int maxPlayerLives;
     void Awake()
     {
+        maxPlayerLives = playerLives;
         int numGameSessions = FindObjectsOfType<Heart_Score_Counter>().Length;
         if (numGameSessions > 1)
         {
@@ -37,6 +40,7 @@ public class Heart_Score_Counter : MonoBehaviour
         coinScore += pointsToAdd;
         CoinText.text = coinScore.ToString();
         Debug.Log("The player has " + coinScore + " coins.");
+        FindObjectOfType<PlayerImageTransition>().ColorCoinTransition();
     }
 
     public int GetCoinCount()
@@ -99,5 +103,14 @@ public class Heart_Score_Counter : MonoBehaviour
         coinScore = resetCoinScore;
         CoinText.text = resetCoinScore.ToString();
     }
+
+    public float PercentofPlayerLived()
+    {
+        float tempPL = (float) playerLives -1;
+        float tempMPL = (float) maxPlayerLives;
+        float tempPPL = tempPL / tempMPL;
+        return (tempPPL);
+    }    
+
 }
 
