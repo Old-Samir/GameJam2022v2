@@ -9,13 +9,11 @@ public class Heart_Score_Counter : MonoBehaviour
     [SerializeField] TextMeshProUGUI livesText;
     [SerializeField] TextMeshProUGUI CoinText;
     [SerializeField] int playerLives;
-
-    private int maxPlayerLives;
     public int coinScore = 0;
     public int resetCoinScore = 0;
+    float deathTimer = 3.00f;
     void Awake()
     {
-        maxPlayerLives = playerLives;
         int numGameSessions = FindObjectsOfType<Heart_Score_Counter>().Length;
         if (numGameSessions > 1)
         {
@@ -39,7 +37,6 @@ public class Heart_Score_Counter : MonoBehaviour
         coinScore += pointsToAdd;
         CoinText.text = coinScore.ToString();
         Debug.Log("The player has " + coinScore + " coins.");
-        FindObjectOfType<PlayerImageTransition>().ColorCoinTransition();
     }
 
     public int GetCoinCount()
@@ -56,7 +53,9 @@ public class Heart_Score_Counter : MonoBehaviour
         }
         else
         {
-            GoToCredits();
+            TakeDamage();
+            DeathSequence();
+            //Invoke("GoToCredits", 2f);
         }
 
     }
@@ -80,6 +79,16 @@ public class Heart_Score_Counter : MonoBehaviour
         FindObjectOfType<LevelManager>().LoadCredits();
         Destroy(gameObject);
     }
+    void DeathSequence()
+    {
+        FindObjectOfType<ScenePersist>().ResetScenePersist();
+        // Destroy(gameObject);
+        FindObjectOfType<LevelManager>().GameOver();
+        Invoke("GoToCredits", deathTimer);
+        // FindObjectOfType<ScenePersist>().ResetScenePersist();
+        // FindObjectOfType<LevelManager>().LoadCredits();
+        // Destroy(gameObject);
+    }
     public void LevelBeaten()
     {
         Destroy(CoinText);
@@ -89,16 +98,6 @@ public class Heart_Score_Counter : MonoBehaviour
     {
         coinScore = resetCoinScore;
         CoinText.text = resetCoinScore.ToString();
-    }
-
-    //This is the math to make the Player Image Color Tansition
-    //Needs to go from 0 -> 1 to work correctly
-    public float PercentofPlayerLived()
-    {
-        float tempPL = (float) playerLives - 1;
-        float tempMPL = (float) maxPlayerLives;
-        float tempPPL = tempPL / tempMPL; 
-        return (tempPPL);
     }
 }
 
