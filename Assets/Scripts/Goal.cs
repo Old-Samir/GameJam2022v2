@@ -77,4 +77,12 @@ public class Goal : MonoBehaviour
          }
      }
 
+     public float PercentofCoins()
+     {  
+        float floatCoinScore = (float)FindObjectOfType<Heart_Score_Counter>().coinScore;
+        float maxCoins = (float) maxCoinsInScene;
+        float results = floatCoinScore / maxCoins;
+        return (results);
+     }
+
 }

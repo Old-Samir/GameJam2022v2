@@ -9,8 +9,6 @@ public class DoorTransition : MonoBehaviour
     [SerializeField] SpriteRenderer doorTopClosed;
     [SerializeField] Sprite doorTopOpen;
 
-
-
     public void DoorClosedToOpen() 
     {
         doorClosed.sprite = doorOpen;

@@ -11,7 +11,6 @@ public class Heart_Score_Counter : MonoBehaviour
     [SerializeField] int playerLives;
     public int coinScore = 0;
     public int resetCoinScore = 0;
-
     void Awake()
     {
         int numGameSessions = FindObjectsOfType<Heart_Score_Counter>().Length;
@@ -37,6 +36,8 @@ public class Heart_Score_Counter : MonoBehaviour
         coinScore += pointsToAdd;
         CoinText.text = coinScore.ToString();
         Debug.Log("The player has " + coinScore + " coins.");
+        Debug.Log (FindObjectOfType<Goal>().PercentofCoins());
+
     }
 
     public int GetCoinCount()
