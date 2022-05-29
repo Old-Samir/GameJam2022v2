@@ -4797,6 +4797,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5288531642079005740, guid: 910949ed025643f4a859627102494095, type: 3}
+      propertyPath: maxCoinsInScene
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 5288531642079005745, guid: 910949ed025643f4a859627102494095, type: 3}
       propertyPath: m_Name
       value: DoorGoal
