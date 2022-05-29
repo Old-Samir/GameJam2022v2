@@ -56,11 +56,12 @@ public class Goal : MonoBehaviour
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         int nextSceneIndex = currentSceneIndex + 1;
         FindObjectOfType<Heart_Score_Counter>().ResetCoinCounter();
+        Debug.Log("Next" + nextSceneIndex);
 
-        if (nextSceneIndex == SceneManager.sceneCountInBuildSettings)
+        if (nextSceneIndex == 9)
         {
             DestroyAllGameObjects();
-            nextSceneIndex = 1;
+            nextSceneIndex = 10;
         }
         FindObjectOfType<ScenePersist>().ResetScenePersist();
         SceneManager.LoadScene(nextSceneIndex);
