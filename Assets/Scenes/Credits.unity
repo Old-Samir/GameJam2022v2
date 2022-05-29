@@ -831,18 +831,21 @@ MonoBehaviour:
     Idealtheif
 
 
-    Male Death Sound - HighPixel @ freesound.org
+    https://creativecommons.org/publicdomain/zero/1.0/
 
-    Happy
-    Tune Sound - cabled_mess @ freesound.org
+    Male
+    Death Sound - HighPixel @ freesound.org
 
-    8-bit Electrohouse Sound - RutgerMuller
-    @ freesound.org
+    Happy Tune Sound - cabled_mess @
+    freesound.org
 
-    Music for Dark Moments Sound - Victor_Natas @ freesound.org
+    8-bit Electrohouse Sound - RutgerMuller @ freesound.org
 
-    Game
-    Over Sound - Leszek_Szary@freesound.org
+    Music
+    for Dark Moments Sound - Victor_Natas @ freesound.org
+
+    Game Over Sound -
+    Leszek_Szary@freesound.org
 
     Volcano map pack - Tio Aimar @ opengameart.org
 
@@ -850,7 +853,16 @@ MonoBehaviour:
     Art Complete Pack - Kenney.nl @ opengameart.org
 
 
-'
+    https://creativecommons.org/licenses/by/3.0/
+
+    Epic
+    Orchestra Sound - joshuaempyre @freesound.org
+
+
+    https://creativecommons.org/licenses/by/4.0/
+
+    Victory
+    Celebration Sound - FunWithSound @freesound.org'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1307,7 +1319,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 50, y: -812}
+  m_AnchoredPosition: {x: 48, y: -798}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &1577253986
