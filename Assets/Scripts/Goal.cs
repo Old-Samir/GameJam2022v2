@@ -59,12 +59,14 @@ public class Goal : MonoBehaviour
 
         if (nextSceneIndex == SceneManager.sceneCountInBuildSettings)
         {
-            nextSceneIndex = 1;
             DestroyAllGameObjects();
+            nextSceneIndex = 1;
         }
-
         FindObjectOfType<ScenePersist>().ResetScenePersist();
         SceneManager.LoadScene(nextSceneIndex);
+
+
+
     }
 
      public void DestroyAllGameObjects()

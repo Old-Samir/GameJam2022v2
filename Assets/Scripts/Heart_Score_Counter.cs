@@ -93,6 +93,7 @@ public class Heart_Score_Counter : MonoBehaviour
         // FindObjectOfType<LevelManager>().LoadCredits();
         // Destroy(gameObject);
     }
+
     public void LevelBeaten()
     {
         Destroy(CoinText);
@@ -110,7 +111,10 @@ public class Heart_Score_Counter : MonoBehaviour
         float tempMPL = (float) maxPlayerLives;
         float tempPPL = tempPL / tempMPL;
         return (tempPPL);
-    }    
+    }
+}    
 
-}
+
+
+
 

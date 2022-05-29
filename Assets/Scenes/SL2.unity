@@ -5828,6 +5828,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5288531642079005740, guid: 910949ed025643f4a859627102494095, type: 3}
+      propertyPath: maxCoinsInScene
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 5288531642079005745, guid: 910949ed025643f4a859627102494095, type: 3}
       propertyPath: m_Name
       value: DoorGoal
@@ -5838,11 +5842,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5288531642079005747, guid: 910949ed025643f4a859627102494095, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -9.007
+      value: -17.06
       objectReference: {fileID: 0}
     - target: {fileID: 5288531642079005747, guid: 910949ed025643f4a859627102494095, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 11.633
+      value: -1.28
       objectReference: {fileID: 0}
     - target: {fileID: 5288531642079005747, guid: 910949ed025643f4a859627102494095, type: 3}
       propertyPath: m_LocalPosition.z
@@ -8012,11 +8016,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8124854763809590933, guid: 455a2cadf2b7f944c95878cabbe80fc0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -46.96
+      value: -47.67
       objectReference: {fileID: 0}
     - target: {fileID: 8124854763809590933, guid: 455a2cadf2b7f944c95878cabbe80fc0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.11
+      value: -2.25
       objectReference: {fileID: 0}
     - target: {fileID: 8124854763809590933, guid: 455a2cadf2b7f944c95878cabbe80fc0, type: 3}
       propertyPath: m_LocalPosition.z

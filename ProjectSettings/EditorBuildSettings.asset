@@ -32,5 +32,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SL2.unity
     guid: 3be743620c1d1064cbdf7b341d610bc4
+  - enabled: 1
+    path: Assets/Scenes/CoolGaneWon.unity
+    guid: 246ebb857ac28924d89b750ec315e346
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: dccdb1a320371514fb7f11395c19f26a, type: 2}

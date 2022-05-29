@@ -78,4 +78,9 @@ public class LevelManager : MonoBehaviour
     {
         SceneManager.LoadScene("GameOver");
     }
+
+    public void GameWon()
+    {
+        SceneManager.LoadScene("GameWon");
+    }
 }
